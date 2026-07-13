@@ -26,7 +26,8 @@
         <script>
             aleat("JavaScriptが読み込まれました")
         function lottery() {
-            alert("抽選ボタンが押されました！")
+         let number = Math.floor(Math.random() * 100) + 1;
+            document.getElementById("result").textContent = "今日のラッキーナンバーは" + number + "です！";
         }
         </script>
     </body>
